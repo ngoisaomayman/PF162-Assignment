@@ -76,7 +76,7 @@ và đủ nhỏ. Tương tự, nếu đạo hàm âm thì hàm số giảm, ngh�
 số `x`, tại điểm `x_0`, nếu ta di chuyển theo hướng ngược lại 
 với dấu (hướng) của đạo hàm `f'(x_0)` thì hàm số sẽ giảm dần**. 
 	
-###2.3. Giải thuật tối ưu  "Gradient Descent"}
+###2.3. Gradient Descent
 Tại bước thứ i với các tham số chứa trong vector `P_i`, nếu 
 `P_(i+1)` được xác định từ phương pháp GD thì ta có 
 `L(P_(i+1)) < L(P_i)`. 
