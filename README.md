@@ -1,6 +1,6 @@
 # PF162-Assignment 01
 
-##1. Giới thiệu bài toán
+## 1. Giới thiệu bài toán
 Các nhà nghiên cứu trong lĩnh vực sức khoẻ cộng đồng đã quan sát
 và thấy rằng chiều cao của một người trưởng thành (lúc 18 tuổi) 
 phụ thuộc lớn vào chiều cao của chính người đó lúc 2 tuổi. 
@@ -31,8 +31,8 @@ Do đó, nhiệm vụ của nhóm nghiên cứu là xác định các hệ số 
 	
 	y = a * x + b                                           (1)
 	
-##2. Phương pháp tối ưu hoá
-###2.1. Sai số dự báo
+## 2. Phương pháp tối ưu hoá
+### 2.1. Sai số dự báo
 Với chiều cao `x` (lúc 2 tuổi) ở đầu vào, chiều cao lúc trưởng thành 
 `y` là giá trị dự báo được tính từ Phương trình (1). Tuy nhiên, với 
 các đối tượng trong thí nghiệm, chiều cao lúc trưởng thành thực sự 
@@ -51,7 +51,7 @@ Vì `x` và `t` là các giá trị đã đo được từ `N` cá thể trong t
 nghiệm, trong Phương trình (1), `a` và `b` là hai biến cần xác định. 
 Nghĩa là, hàm sai số phụ trên các biến cần xác định là `a` và `b`. 
 
-###2.2. Gradient
+### 2.2. Gradient
 Một cách hình thức, các số liệu sau đây là đã biết trước khi dùng 
 giải thuật tối ưu
 - `N` bộ số liệu `(x, t)`, là những số đo cho `N` cá thể trong 
@@ -76,7 +76,7 @@ và đủ nhỏ. Tương tự, nếu đạo hàm âm thì hàm số giảm, ngh�
 số `x`, tại điểm `x_0`, nếu ta di chuyển theo hướng ngược lại 
 với dấu (hướng) của đạo hàm `f'(x_0)` thì hàm số sẽ giảm dần**. 
 	
-###2.3. Gradient Descent
+### 2.3. Gradient Descent
 Tại bước thứ i với các tham số chứa trong vector `P_i`, nếu 
 `P_(i+1)` được xác định từ phương pháp GD thì ta có 
 `L(P_(i+1)) < L(P_i)`. 
@@ -104,13 +104,13 @@ dự báo tốt hơn. Ở bài tập lớn này, sinh viên sẽ chọn gán
 điều kiện dừng là chạy đúng số lần lặp được quy định. 
 Số này cho trong tập tin đầu vào.
 
-##3. Yêu cầu
+## 3. Yêu cầu
 Ở bài tập lớn này, sinh viên được yêu cầu viết một chương trình 
 để thực hiện các công việc sau đây: đọc dữ liệu đầu vào và 
 đánh giá mô hình dự đoán trong Phương trình (1) dựa vào các 
 số liệu đọc được. Các phần theo sau sẽ mô tả các công việc chi tiết hơn.
 	
-###Đọc dữ liệu đầu vào
+### Đọc dữ liệu đầu vào
 Tập in đầu vào được đưa vào từ tham số dòng lệnh. 
 Tập tin này chứa các tham số phục vụ quá trình tối ưu hoá như sau:
 - num_iterations: số lần lặp trong giải thuật tối ưu GD.
@@ -146,7 +146,7 @@ Tập tin chứa dữ liệu nhập có dạng như sau:
 	76.87       153.78
 	83.76       167.48
 	
-###Đánh giá mô hình và kết xuất 
+### Đánh giá mô hình và kết xuất 
 Gọi `M` là số mẫu dữ liệu được đọc vào. Mỗi mẫu bao gồm cặp giá trị 
 `x` và `t`. Gọi `K` là giá trị đọc được từ thông số `num_folds`.
 	
@@ -209,7 +209,7 @@ Kết quả xuất ra màn hình như sau:
 	2.00   0.01   5.07   0.01   0.015   0.10   0.20   0.35   0.20   0.015   0.01
 	2.00   0.01   5.07   0.01   0.015   0.10   0.20   0.35   0.20   0.015   0.01
 
-##Hiện thực
+## Hiện thực
 **Sinh viên được cung cấp các file sau:**
  - `main.cpp`: mã nguồn chính của chương trình
  - `commonLib.h`: file header chứa prototype các hàm dùng chung
